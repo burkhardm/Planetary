@@ -14,6 +14,12 @@
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		43CD9799123D6504003B628E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 43CD9798123D6504003B628E /* Icon.png */; };
+		47857D4517CDF2C50002B4AA /* README in Resources */ = {isa = PBXBuildFile; fileRef = 47857D4017CDF2C50002B4AA /* README */; };
+		47857D4617CDF2C50002B4AA /* BloomNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47857D4217CDF2C50002B4AA /* BloomNode.cpp */; };
+		47857D4717CDF2C50002B4AA /* BloomScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47857D4317CDF2C50002B4AA /* BloomScene.cpp */; };
+		47857D4817CDF2C50002B4AA /* OrientationNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47857D4417CDF2C50002B4AA /* OrientationNode.cpp */; };
+		47A17AE117CDEE970079AEB8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A17AE017CDEE970079AEB8 /* MobileCoreServices.framework */; };
+		47A17AE317CDEEA20079AEB8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A17AE217CDEEA20079AEB8 /* ImageIO.framework */; };
 		77B44842133BCB3A00987E13 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B44817133BCB3A00987E13 /* libFlurry.a */; };
 		77B44848133BCB3A00987E13 /* CinderFlurry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77B44827133BCB3A00987E13 /* CinderFlurry.mm */; };
 		C725DFFE121DAC7F00FA186B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C727C02B121B400300192073 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -104,8 +110,6 @@
 		E28177EE139AFA8500049D69 /* PlaylistFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E28177EC139AFA8500049D69 /* PlaylistFilter.cpp */; };
 		E28177F6139AFB0800049D69 /* LetterFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E28177F5139AFB0800049D69 /* LetterFilter.cpp */; };
 		E28FDA831339B782005EDBB4 /* PlayControls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E28FDA821339B782005EDBB4 /* PlayControls.cpp */; };
-		E2A868B313D3CA6F0024E4D0 /* BloomNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A868B113D3CA6F0024E4D0 /* BloomNode.cpp */; };
-		E2A868B613D3D0950024E4D0 /* BloomScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2A868B413D3D0940024E4D0 /* BloomScene.cpp */; };
 		E2CD4B9D13CA6F350047AF5F /* PlaylistChooser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2CD4B9B13CA6F350047AF5F /* PlaylistChooser.cpp */; };
 		E2DC1E0213984774000B1D11 /* NotificationOverlay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2DC1E0113984774000B1D11 /* NotificationOverlay.cpp */; };
 		E2DC801113FC7BB400CF1106 /* TaskQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2DC801013FC7BB400CF1106 /* TaskQueue.cpp */; };
@@ -113,7 +117,6 @@
 		E2E21CD913A1821300A476A2 /* GyroHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E21CD713A1821300A476A2 /* GyroHelper.cpp */; };
 		E2E21CDD13A2D71300A476A2 /* Stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E21CDB13A2D70C00A476A2 /* Stats.cpp */; };
 		E2E8787A1406DD8B00508783 /* SettingsPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E878791406DD8B00508783 /* SettingsPanel.cpp */; };
-		E2FADC1613DB740700C24F4D /* OrientationNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2FADC1413DB740700C24F4D /* OrientationNode.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +129,15 @@
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* Kepler_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kepler_Prefix.pch; sourceTree = "<group>"; };
 		43CD9798123D6504003B628E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../resources/Icon.png; sourceTree = SOURCE_ROOT; };
+		47857D3D17CDF2C50002B4AA /* BloomNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloomNode.h; sourceTree = "<group>"; };
+		47857D3E17CDF2C50002B4AA /* BloomScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloomScene.h; sourceTree = "<group>"; };
+		47857D3F17CDF2C50002B4AA /* OrientationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationNode.h; sourceTree = "<group>"; };
+		47857D4017CDF2C50002B4AA /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		47857D4217CDF2C50002B4AA /* BloomNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BloomNode.cpp; sourceTree = "<group>"; };
+		47857D4317CDF2C50002B4AA /* BloomScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BloomScene.cpp; sourceTree = "<group>"; };
+		47857D4417CDF2C50002B4AA /* OrientationNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrientationNode.cpp; sourceTree = "<group>"; };
+		47A17AE017CDEE970079AEB8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		47A17AE217CDEEA20079AEB8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		77B44813133BCB3A00987E13 /* CinderFlurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderFlurry.h; sourceTree = "<group>"; };
 		77B44816133BCB3A00987E13 /* FlurryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAPI.h; sourceTree = "<group>"; };
 		77B44817133BCB3A00987E13 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
@@ -243,10 +255,6 @@
 		E28177EC139AFA8500049D69 /* PlaylistFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlaylistFilter.cpp; path = ../src/PlaylistFilter.cpp; sourceTree = "<group>"; };
 		E28177F5139AFB0800049D69 /* LetterFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LetterFilter.cpp; path = ../src/LetterFilter.cpp; sourceTree = "<group>"; };
 		E28FDA821339B782005EDBB4 /* PlayControls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayControls.cpp; path = ../src/PlayControls.cpp; sourceTree = "<group>"; };
-		E2A868B113D3CA6F0024E4D0 /* BloomNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BloomNode.cpp; path = ../src/BloomNode.cpp; sourceTree = "<group>"; };
-		E2A868B213D3CA6F0024E4D0 /* BloomNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloomNode.h; sourceTree = "<group>"; };
-		E2A868B413D3D0940024E4D0 /* BloomScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BloomScene.cpp; path = ../src/BloomScene.cpp; sourceTree = "<group>"; };
-		E2A868B513D3D0940024E4D0 /* BloomScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloomScene.h; sourceTree = "<group>"; };
 		E2CD4B9B13CA6F350047AF5F /* PlaylistChooser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlaylistChooser.cpp; path = ../src/PlaylistChooser.cpp; sourceTree = "<group>"; };
 		E2CD4B9C13CA6F350047AF5F /* PlaylistChooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaylistChooser.h; path = ../src/PlaylistChooser.h; sourceTree = "<group>"; };
 		E2DC1E0113984774000B1D11 /* NotificationOverlay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NotificationOverlay.cpp; path = ../src/NotificationOverlay.cpp; sourceTree = "<group>"; };
@@ -287,8 +295,6 @@
 		E2E21CDC13A2D70E00A476A2 /* Stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stats.h; path = ../src/Stats.h; sourceTree = "<group>"; };
 		E2E878791406DD8B00508783 /* SettingsPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SettingsPanel.cpp; path = ../src/SettingsPanel.cpp; sourceTree = "<group>"; };
 		E2E8787B1406DE0500508783 /* SettingsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsPanel.h; path = ../src/SettingsPanel.h; sourceTree = "<group>"; };
-		E2FADC1413DB740700C24F4D /* OrientationNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OrientationNode.cpp; path = ../src/OrientationNode.cpp; sourceTree = "<group>"; };
-		E2FADC1513DB740700C24F4D /* OrientationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrientationNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +302,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A17AE317CDEEA20079AEB8 /* ImageIO.framework in Frameworks */,
+				47A17AE117CDEE970079AEB8 /* MobileCoreServices.framework in Frameworks */,
 				E1AA09A7135508B900B44147 /* CoreMotion.framework in Frameworks */,
 				C725E001121DAC8F00FA186B /* AVFoundation.framework in Frameworks */,
 				C725DFFE121DAC7F00FA186B /* CoreMedia.framework in Frameworks */,
@@ -353,6 +361,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				47A17AE217CDEEA20079AEB8 /* ImageIO.framework */,
+				47A17AE017CDEE970079AEB8 /* MobileCoreServices.framework */,
 				E1A332D9130105EC00CED126 /* Blocks */,
 				00CFDFB81138492F0091E310 /* Headers */,
 				00CFDFA7113848F40091E310 /* Source */,
@@ -399,6 +409,37 @@
 				E1A332E11301068800CED126 /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47857D3B17CDF2C50002B4AA /* BloomScene */ = {
+			isa = PBXGroup;
+			children = (
+				47857D3C17CDF2C50002B4AA /* include */,
+				47857D4017CDF2C50002B4AA /* README */,
+				47857D4117CDF2C50002B4AA /* src */,
+			);
+			name = BloomScene;
+			path = ../blocks/BloomScene;
+			sourceTree = "<group>";
+		};
+		47857D3C17CDF2C50002B4AA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				47857D3D17CDF2C50002B4AA /* BloomNode.h */,
+				47857D3E17CDF2C50002B4AA /* BloomScene.h */,
+				47857D3F17CDF2C50002B4AA /* OrientationNode.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		47857D4117CDF2C50002B4AA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				47857D4217CDF2C50002B4AA /* BloomNode.cpp */,
+				47857D4317CDF2C50002B4AA /* BloomScene.cpp */,
+				47857D4417CDF2C50002B4AA /* OrientationNode.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		77B447EC133BCB3A00987E13 /* CinderFlurry */ = {
@@ -548,8 +589,8 @@
 		E1A332D9130105EC00CED126 /* Blocks */ = {
 			isa = PBXGroup;
 			children = (
+				47857D3B17CDF2C50002B4AA /* BloomScene */,
 				E2DC800913FC6E8B00CF1106 /* BloomTasks */,
-				E22D4D3113DC25AD0019E529 /* BloomScene */,
 				E2D20EBF135CEEA900A29743 /* CinderOrientation */,
 				77B447EC133BCB3A00987E13 /* CinderFlurry */,
 				E1276E22132821AA00E1FC3F /* CinderIPod */,
@@ -717,37 +758,6 @@
 			name = World;
 			sourceTree = "<group>";
 		};
-		E22D4D3113DC25AD0019E529 /* BloomScene */ = {
-			isa = PBXGroup;
-			children = (
-				E22D4D3C13DC2A300019E529 /* include */,
-				E22D4D3D13DC2A360019E529 /* src */,
-			);
-			name = BloomScene;
-			sourceTree = "<group>";
-		};
-		E22D4D3C13DC2A300019E529 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E2A868B213D3CA6F0024E4D0 /* BloomNode.h */,
-				E2A868B513D3D0940024E4D0 /* BloomScene.h */,
-				E2FADC1513DB740700C24F4D /* OrientationNode.h */,
-			);
-			name = include;
-			path = ../blocks/BloomScene/include;
-			sourceTree = "<group>";
-		};
-		E22D4D3D13DC2A360019E529 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				E2A868B413D3D0940024E4D0 /* BloomScene.cpp */,
-				E2A868B113D3CA6F0024E4D0 /* BloomNode.cpp */,
-				E2FADC1413DB740700C24F4D /* OrientationNode.cpp */,
-			);
-			name = src;
-			path = ../blocks/BloomScene/src;
-			sourceTree = "<group>";
-		};
 		E2310D4D141127400031AA63 /* clouds */ = {
 			isa = PBXGroup;
 			children = (
@@ -880,7 +890,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Kepler" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -949,6 +959,7 @@
 				E1F642F513FB101D007E1183 /* gradientLarge.png in Resources */,
 				E11BA85F140855590020DD9C /* uiButtons.png in Resources */,
 				E2310D50141127B10031AA63 /* Icon@2x.png in Resources */,
+				47857D4517CDF2C50002B4AA /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,15 +1012,15 @@
 				E219CEFE13A7DAFD006C7F26 /* Constellation.cpp in Sources */,
 				E22D983B13B6A2B700F9DB06 /* Shadow.cpp in Sources */,
 				E2CD4B9D13CA6F350047AF5F /* PlaylistChooser.cpp in Sources */,
-				E2A868B313D3CA6F0024E4D0 /* BloomNode.cpp in Sources */,
-				E2A868B613D3D0950024E4D0 /* BloomScene.cpp in Sources */,
 				E2576E4213D4C8D600EC82EF /* TextureRect.cpp in Sources */,
 				E1D32DFF13D78E01002F33ED /* Vignette.cpp in Sources */,
-				E2FADC1613DB740700C24F4D /* OrientationNode.cpp in Sources */,
 				E27A27E613DDDF8500B957EC /* TextureLoader.cpp in Sources */,
 				E2DC801113FC7BB400CF1106 /* TaskQueue.cpp in Sources */,
 				E2E8787A1406DD8B00508783 /* SettingsPanel.cpp in Sources */,
 				E2540831140EBCBA00EA3154 /* StringHelpers.mm in Sources */,
+				47857D4617CDF2C50002B4AA /* BloomNode.cpp in Sources */,
+				47857D4717CDF2C50002B4AA /* BloomScene.cpp in Sources */,
+				47857D4817CDF2C50002B4AA /* OrientationNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1020,12 +1031,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CINDER_PATH_i21bmabu = /Users/i21bmabu/Development/infoviz/frameworks/cinder_0.8.5_mac;
 				CINDER_PATH_jandersen = /Users/jandersen/libs/Cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1033,15 +1048,15 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = "Kepler-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../blocks/CinderFlurry/lib/FlurryLib\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
 					"\"$(CINDER_PATH)/lib/libcinder-iphone_d.a\"",
 					"-lz",
@@ -1053,8 +1068,9 @@
 				PRODUCT_NAME = Planetary;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -1062,11 +1078,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CINDER_PATH_i21bmabu = /Users/i21bmabu/Development/infoviz/frameworks/cinder_0.8.5_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1074,15 +1094,15 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PROFILING_CODE = NO;
 				INFOPLIST_FILE = "Kepler-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../blocks/CinderFlurry/lib/FlurryLib\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
 					"\"$(CINDER_PATH)/lib/libcinder-iphone.a\"",
 					"-lz",
@@ -1095,8 +1115,9 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -1118,7 +1139,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -1146,7 +1168,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
@@ -1175,7 +1198,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MACOSX_DEPLOYMENT_TARGET = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
@@ -1190,26 +1214,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CINDER_PATH_i21bmabu = /Users/i21bmabu/Development/infoviz/frameworks/cinder_0.8.5_mac;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Kepler_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_THUMB_SUPPORT = NO;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PROFILING_CODE = NO;
 				INFOPLIST_FILE = "Kepler-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../blocks/CinderFlurry/lib/FlurryLib\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
 					"\"$(CINDER_PATH)/lib/libcinder-iphone.a\"",
 					"-lz",
@@ -1222,8 +1250,9 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
-				VALID_ARCHS = "armv6 armv7";
+				VALID_ARCHS = armv7;
 			};
 			name = Distribution;
 		};
